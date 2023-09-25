@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- JS Bootstrap dan Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaea;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.header {
+    background-color: #2558ff;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+p, ul, li {
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section:last-child {
+    margin-bottom: 0;
+}
+
+h2 {
+    border-bottom: 3px solid #2558ff;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+}
+.photo-wrapper {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #000000;
+}
+
+.profile-photo {
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    /* Menambahkan clear agar konten di bawahnya tidak bergeser */
+    clear: both;
+}
+
+.carousel-container {
+    max-width: 400px; /* Atur lebar sesuai keinginan */
+    margin: 20px auto; /* Tambahkan margin agar terpusat */
+}
+
+.carousel-inner img {
+    max-height: 700px; /* Atur tinggi maksimal dari gambar */
+    width: auto; /* Pastikan lebar gambar otomatis mengikuti tinggi yang ditentukan */
+    margin: 0 auto; /* Gambar terpusat dalam carousel */
+}
+
+    /* Menentukan transisi untuk efek smooth */
+.photo-wrapper {
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Menambahkan shadow awal untuk depth */
+}
+
+/* Efek hover untuk pembesaran gambar */
+.photo-wrapper:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Untuk layar tablet dan yang lebih kecil */
+        @media screen and (max-width: 992px) {
+            .photo-wrapper {
+                float: none;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+
+            .header {
+                text-align: center; /* Memastikan judul dan deskripsi terpusat */
+            }
+        }
+
+        /* Untuk layar mobile dan yang lebih kecil */
+        @media screen and (max-width: 576px) {
+            .container {
+                padding: 20px; /* Mengurangi padding untuk memberi ruang lebih banyak pada konten */
+            }
+
+            .carousel-container img {
+                max-height: 350px; /* Mengurangi tinggi maksimal gambar untuk tampilan mobile */
+            }
+
+            h1, h2, h3 {
+                font-size: 90%; /* Mengurangi ukuran font untuk judul */
+            }
+        }
+
+    </style>
+</head>
+...
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="photo-wrapper">
+                <img src="fotocv/fotocv.jpg" alt="Gayu Baruwa" class="profile-photo">
+            </div>
+            <h1>Gayu Baruwa</h1>
+            <p style="font-size: 1.5rem;">Undergraduate Informatics Program</p>
+        </div>
+<br>
+<br>
+<br>
+<br>
+        <div class="section">
+            <h2>Personal Information</h2>
+            <p>Email: gayubaruwa27@gmail.com</p>
+            <p>Phone: +6285338264872</p>
+            <p>Address: Jalan Klampis Sacharosa No.14, Surabaya</p>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Degree</th>
+                        <th>Institution</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B.Sc. in Informatics Engineering</td>
+                        <td>Institut Teknologi Sepuluh Nopember</td>
+                        <td>2022-2026</td>
+                    </tr>
+                    <tr>
+                        <td>Senior High School</td>
+                        <td>SMA Semesta Semarang</td>
+                        <td>2019-2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Teamwork</li>
+                <li>Leadership</li>
+                <li>Friendly</li>
+                <li>Active</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Position</th>
+                        <th>Organization</th>
+                        <th>Duration</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Staff Of Public Relation of Social Media Section</td>
+                        <td>Schematics ITS 2023</td>
+                        <td>February 2023 - Present</td>
+                        <td>Control Social Media Schematics Especially on Instagram</td>
+                    </tr>
+                    <tr>
+                        <td>Staff Of Finance</td>
+                        <td>UKM Golf</td>
+                        <td>Agustus 2023 - Present</td>
+                        <td>Be in charge of golf merchandise</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="carousel-container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indikator -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+    
+        <!-- Konten Slide -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="fotocv/fotocv.jpg" alt="Slide 1" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h5>Schematics ITS 2023</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="fotocv/fotocv2.jpg" alt="Slide 2" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h5>Staff Of Public Relation of Social Media Section</h5>
+                    <p>Admin Instagram.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="fotocv/fotocv3.jpg" alt="Slide 3" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h5>UKM Golf</h5>
+                 </div>
+            </div>
+        </div>
+    
+        <!-- Kontrol (tombol prev dan next) -->
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    </div>
+    
+</body>
+</html>
